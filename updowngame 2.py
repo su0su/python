@@ -51,7 +51,6 @@ while True:
             if n==10 and my !=answer: # 10번을 초과했는데 답을 맞추지 못할 경우
                 print("입력횟수를 초과하셨습니다.")
                 break
-
             if my > answer and my < last:   # last>my>answer 일 경우
                 print("DOWN")
                 last = my                   # 범위는 my<?<first가 됨
@@ -74,8 +73,7 @@ while True:
                 print("%d번째만에 맞추셨습니다." %(n))
                 #congra=n # n을 congra변수에 저장시켜 다시 1로 바뀌기 전의 값을 넣어줌
                 if b > n or not score:       # 기존에 있던 (첫번째일 경우 10) 최대값보다 n이 작을 경우
-                    print("최고기록 갱신 ~!")
-                    
+                    print("최고기록 갱신 ~!")                    
                     na=input("닉네임을 입력하세요 >> ")
                     writefile(n)
                     score.append(n) # 점수 리스트 score에 점수 n을 추가
