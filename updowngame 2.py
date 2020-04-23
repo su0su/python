@@ -6,7 +6,7 @@ name = []
 
 # 파일에 기록 저장
 def writefile(best):
-    fw = open("score.txt",'a')      # 파일을 뒤에 이어쓸 수 있도록 a 권한 부여
+    fw = open("score.txt",'a')      # 파일을 뒤에 이어쓸 수 있도록
     fw.write(na + ':' + str(best) + '\n')
     fw.close()
 
